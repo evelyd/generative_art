@@ -20,10 +20,15 @@ current6 = [0, offset]
 current7 = [-offset, 0]
 current8 = [0, -offset]
 
-color_specs1 = [[255,204,204],[255,229,204],[255,255,204]]
-color_specs2 = [[229,255,204],[204,255,204],[204,255,229]]
-color_specs3 = [[204,255,255],[204,229,255],[204,204,255]]
-color_specs4 = [[229,204,255],[255,204,255],[255,204,229]]
+# color_specs1 = [[255,204,204],[255,229,204],[255,255,204]]
+# color_specs2 = [[229,255,204],[204,255,204],[204,255,229]]
+# color_specs3 = [[204,255,255],[204,229,255],[204,204,255]]
+# color_specs4 = [[229,204,255],[255,204,255],[255,204,229]]
+
+color_specs = [[255,204,204],[255,229,204],[255,255,204],
+               [229,255,204],[204,255,204],[204,255,229],
+               [204,255,255],[204,229,255],[204,204,255],
+               [229,204,255],[255,204,255],[255,204,229]]
 
 iterations = 3000
 rand_range = 40
@@ -31,19 +36,19 @@ ell_size = 100
 step_size = 10
 
 #choose a color scheme
-color_pick = int(random(1,4))
-if color_pick == 1:
-    # background(255,128,0)
-    color_specs = color_specs1
-elif color_pick == 2:
-    # background(0,255,0)
-    color_specs = color_specs2
-elif color_pick == 3:
-    # background(0,128,255)
-    color_specs = color_specs3
-else:
-    # background(255,0,255)
-    color_specs = color_specs4
+# color_pick = int(random(1,4))
+# if color_pick == 1:
+#     # background(255,128,0)
+#     color_specs = color_specs1
+# elif color_pick == 2:
+#     # background(0,255,0)
+#     color_specs = color_specs2
+# elif color_pick == 3:
+#     # background(0,128,255)
+#     color_specs = color_specs3
+# else:
+#     # background(255,0,255)
+#     color_specs = color_specs4
 
 for i in range(0,iterations):   
     
