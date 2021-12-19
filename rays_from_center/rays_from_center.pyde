@@ -94,3 +94,4 @@ for i in range(0,iterations):
     fill(color_specs[i%len(color_specs)][0],color_specs[i%len(color_specs)][1],color_specs[i%len(color_specs)][2])
     ellipse(current8[0],current8[1],ell_size,ell_size)
     
+save('Examples/out.png')

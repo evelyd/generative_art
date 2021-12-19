@@ -14,6 +14,8 @@ def setup():
     # translate(width/2,height/2)
     noFill()
     draw_stuff()
+    
+    save('Examples/out.png')
 
 def draw_stuff():
     

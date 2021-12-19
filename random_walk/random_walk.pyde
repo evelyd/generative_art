@@ -29,3 +29,5 @@ def setup():
     for i in range(0,100*360/15):
         rotate(radians(15))
         draw_lines()
+    
+    save('Examples/out.png')
