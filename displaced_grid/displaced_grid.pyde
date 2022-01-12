@@ -8,11 +8,11 @@ def setup():
 
     noFill()
     
-    # draw()
+    draw_grid()
     
-    save('Examples/out.png')
+    save('Examples/out.tif')
 
-def draw():  
+def draw_grid():  
     global shift
     global l
     global A
@@ -27,7 +27,7 @@ def draw():
 
     translate(-width/4,-height/4)
     
-    spacing = 50
+    spacing = int(random(10,50))
     loops = (width/2)/spacing
 
     # shift = shift + 1
