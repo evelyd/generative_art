@@ -1,3 +1,5 @@
+from PIL import Image
+
 shift = 0
 l = random(0,0.1)
 A = random(20,50)
@@ -11,6 +13,10 @@ def setup():
     draw_grid()
     
     save('Examples/out.tif')
+    
+    #convert tif to png
+    image_object = Image.open('Examples/out.tif')
+    image_object.save('Examples/out.png')
 
 def draw_grid():  
     global shift
